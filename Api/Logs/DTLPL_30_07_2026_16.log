@@ -1,0 +1,2 @@
+(Error)_DL_UserMaster::dtBindDepartment():::30_07_2026_16_06_09_PM :: Could not find stored procedure 'USP_DepartmentMASTER'.
+(Error)_UserMasterController::Bindepartment():::30_07_2026_16_06_09_PM :: Could not find stored procedure 'USP_DepartmentMASTER'.

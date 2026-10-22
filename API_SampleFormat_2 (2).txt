@@ -1,0 +1,57 @@
+1) Work Order API
+
+URL: https://demo.url.com/API/WorkOrder
+Method: POST
+Trigger Point: SAP Calls API Developed by Dash on PUSH Method on Work Order Creation / Update
+
+Sample Request
+{
+  "OrderNumber": "W001",
+  "OrderDate": "2026-05-14",
+  "OrderQty": 9,
+  "PartDetails": {
+    "Code": "XYZ",
+    "Content": "PIGEON INDUCTION COOKTOP",
+    "PackSize": 3
+  },
+  "MCBox": [
+    {
+      "MCBoxSerial": "CB261981293111",
+      "IBSerial": [
+        "CQ261981293001",
+        "CQ261981293002",
+        "CQ261981293003"
+      ]
+    },
+    {
+      "MCBoxSerial": "CB261981293112",
+      "IBSerial": [
+        "CQ261981293004",
+        "CQ261981293005",
+        "CQ261981293006"
+      ]
+    },
+    {
+      "MCBoxSerial": "CB261981293113",
+      "IBSerial": [
+        "CQ261981293007",
+        "CQ261981293008",
+        "CQ261981293009"
+      ]
+    }
+  ]
+}
+
+
+Sample Response
+{
+  "Status": "Success", //Or Fail
+  "Message": "Order data saved",
+}
+
+
+Additional Fields to be derived from Item Master against Item Code
+"Model": "PRIME",
+"Wattage":"230 v AC, 50 Hz",
+"Voltage":"1800W",
+"DegreeOfProtection":"IPX0",
